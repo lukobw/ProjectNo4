@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext')
+
+$black: #000
+$white: #fff
+
+$button-bgcolor: #3c3c3c
+$button-border: #3c3c3c
+$p-color: #3c3c3c
+$h3-color: #3c3c3c
+$legend-color: #3c3c3c
+
+$light: 300
+$regular: 400
+$bold: 700
+
+$lato: 'Lato', sans-serif
+
+*
+  box-sizing: border-box
+
+body
+  font-size: 100%
+
+.container
+  margin: 0 auto
+
+.about-us
+  margin: 150px 0
+
+.about-field
+  border: 2px solid $black
+  text-align: center
+
+  legend
+    color: $legend-color
+    font-family: $lato
+    font-size: 2vmax
+    font-weight: $bold
+    text-transform: uppercase
+    width: 40%
+
+  p
+    color: $p-color
+    font-family: $lato
+    font-size: 1vmax
+    font-weight: $light
+    line-height: 24px
+    margin: 30px auto 50px
+    padding: 10px 0
+    width: 60%
+
+    &:last-child
+      margin-top: 0
+      width: 40%
+
+.center
+  text-align: center
+
+.contact
+  margin: 150px 0 50px
+
+.contact-field
+  border: 2px solid $black
+  text-align: center
+
+  button
+    background-color: $button-bgcolor
+    border: 2px solid $button-border
+    margin: 50px
+    max-width: 60%
+    width: 395px
+    word-spacing: 5px
+
+  .p-button
+    color: $white
+    font-family: $lato
+    font-size: 1vmax
+    font-weight: $regular
+    margin: 0
+    padding: 20px
+    text-transform: uppercase
+
+  legend
+    color: $legend-color
+    font-family: $lato
+    font-size: 1.8vmax
+    font-weight: $bold
+    text-transform: uppercase
+    width: 40%
+    word-spacing: 10px
+
+  p
+    color: $p-color
+    font-family: $lato
+    font-size: 1vmax
+    font-weight: $light
+    line-height: 24px
+    margin: 20px auto
+    padding: 10px 0
+    width: 60%
+
+footer
+  margin: 70px 0
+  text-align: center
+
+  p
+    color: $p-color
+    display: inline-block
+    font-family: $lato
+    font-size: .8vmax
+    font-weight: $regular
+    margin-left: 30px
+
+.gallery
+  margin: 0 auto
+  text-align: center
+
+  .photo
+    padding: 5px
+    position: relative
+
+    h1
+      bottom: 1vw
+      color: $white;
+      font-family: $lato
+      font-size: 2vmax
+      font-weight: $bold
+      left: 30px
+      position: absolute
+      text-transform: uppercase
+      z-index: 1
+
+  img
+    height: 100%
+    padding: 0
+    position: relative
+    width: 100%
+
+.jumbo
+  margin-top: 22vh
+
+.jumbotron
+  background-attachment: fixed
+  background-image: url('../img/jumbo-bg.png')
+  background-position:  center center
+  background-repeat: no-repeat
+  background-size:  cover
+
+
+.jumbo-button
+  margin-top: 200px
+  text-align: center
+
+.logo
+  text-align: center
+
+.page-header
+  text-align: center
+
+  h1
+    color: $white
+    font-family: $lato
+    font-size: 2.9vmax
+    font-weight: $bold
+    letter-spacing: 1px
+    margin: 100px 0 50px
+    text-align: center
+    text-transform: uppercase
+
+  p
+    color: $white
+    font-family: $lato
+    font-size: 1vmax
+    font-weight: $regular
+    letter-spacing: 2px
+    line-height: 29px
+    margin: 50px auto 200px
+    max-width: 800px
+    text-align: center
+    text-transform: uppercase
+
+.services
+  background: url('../img/services-bg.png')
+  background-repeat: no-repeat
+  background-size: cover
+  min-height: 50vh
+  padding: 100px 0
+
+.services-field
+  border: 2px solid $white
+  color: $white
+
+  legend
+    color: $white
+    font-family: $lato
+    font-size: 2vmax;
+    font-weight: $bold
+    text-align: center
+    text-transform: uppercase
+    width: 40%
+
+  p
+    color: $white
+    font-family: $lato
+    font-size: 1vmax
+    font-weight: 300
+    line-height: 26px
+    margin: 25px auto 50px
+    padding: 25px
+    text-align: center
+    width: 50%
+
+.works
+  margin: 150px 0
+
+.works-field
+  border: 2px solid $black
+  text-align: center
+
+  div
+    margin-top: 100px
+
+  h3
+    color: $h3-color
+    font-family: $lato
+    font-size: 1.1vmax
+    font-weight: $bold
+    padding: 40px 0
+    text-transform: uppercase
+
+  legend
+    color: $legend-color
+    font-family: $lato
+    font-size: 2vmax
+    font-weight: $bold
+    text-transform: uppercase
+    width: 40%
+    word-spacing: 10px
+
+.works-grid
+  margin: 0 auto
+  text-align: center
+
+  p
+    font-size: 1vmax
+    margin: 0 auto
+    width: 50%
+
+    &:last-child
+      margin-bottom: 50px
+
+@media only screen and (max-width: 768px)
+  body p
+    text-align: justify

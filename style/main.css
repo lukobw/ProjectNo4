@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.about-us {
+  margin: 150px 0;
+}
+
+.about-field {
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.about-field legend {
+  color: #3c3c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 2vmax;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.about-field p {
+  color: #3c3c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 1vmax;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 30px auto 50px;
+  padding: 10px 0;
+  width: 60%;
+}
+
+.about-field p:last-child {
+  margin-top: 0;
+  width: 40%;
+}
+
+.center {
+  text-align: center;
+}
+
+.contact {
+  margin: 150px 0 50px;
+}
+
+.contact-field {
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.contact-field button {
+  background-color: #3c3c3c;
+  border: 2px solid #3c3c3c;
+  margin: 50px;
+  max-width: 60%;
+  width: 395px;
+  word-spacing: 5px;
+}
+
+.contact-field .p-button {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1vmax;
+  font-weight: 400;
+  margin: 0;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.contact-field legend {
+  color: #3c3c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 1.8vmax;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 40%;
+  word-spacing: 10px;
+}
+
+.contact-field p {
+  color: #3c3c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 1vmax;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 20px auto;
+  padding: 10px 0;
+  width: 60%;
+}
+
+footer {
+  margin: 70px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #3c3c3c;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: .8vmax;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.gallery {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery .photo {
+  padding: 5px;
+  position: relative;
+}
+
+.gallery .photo h1 {
+  bottom: 1vw;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 2vmax;
+  font-weight: 700;
+  left: 30px;
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.gallery img {
+  height: 100%;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.jumbo {
+  margin-top: 22vh;
+}
+
+.jumbotron {
+  background-attachment: fixed;
+  background-image: url("../img/jumbo-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbo-button {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.page-header h1 {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 2.9vmax;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 100px 0 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-header p {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1vmax;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 29px;
+  margin: 50px auto 200px;
+  max-width: 800px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services {
+  background: url("../img/services-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  padding: 100px 0;
+}
+
+.services-field {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.services-field legend {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 2vmax;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  width: 40%;
+}
+
+.services-field p {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 1vmax;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 25px auto 50px;
+  padding: 25px;
+  text-align: center;
+  width: 50%;
+}
+
+.works {
+  margin: 150px 0;
+}
+
+.works-field {
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.works-field div {
+  margin-top: 100px;
+}
+
+.works-field h3 {
+  color: #3c3c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 1.1vmax;
+  font-weight: 700;
+  padding: 40px 0;
+  text-transform: uppercase;
+}
+
+.works-field legend {
+  color: #3c3c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 2vmax;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 40%;
+  word-spacing: 10px;
+}
+
+.works-grid {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.works-grid p {
+  font-size: 1vmax;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.works-grid p:last-child {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  body p {
+    text-align: justify;
+  }
+}
+ 
+
+ /*# sourceMappingURL= main.css.map */
