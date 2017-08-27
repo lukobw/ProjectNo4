@@ -31,18 +31,18 @@ body {
 
 .about-field p {
   color: #3c3c3c;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1vmax;
   font-weight: 300;
   line-height: 24px;
+  width: 60%;
   margin: 30px auto 50px;
   padding: 10px 0;
-  width: 60%;
 }
 
 .about-field p:last-child {
   margin-top: 0;
-  width: 40%;
+  width: 41%;
 }
 
 .center {
@@ -89,13 +89,13 @@ body {
 
 .contact-field p {
   color: #3c3c3c;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1vmax;
   font-weight: 300;
   line-height: 24px;
+  width: 60%;
   margin: 20px auto;
   padding: 10px 0;
-  width: 60%;
 }
 
 footer {
@@ -105,11 +105,17 @@ footer {
 
 footer p {
   color: #3c3c3c;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.8vmax;
+  font-weight: 300;
+  line-height: 0;
+  width: auto;
   display: inline-block;
-  font-family: "Lato", sans-serif;
-  font-size: .8vmax;
   font-weight: 400;
-  margin-left: 30px;
+}
+
+footer img {
+  margin-right: 30px;
 }
 
 .gallery {
@@ -123,11 +129,11 @@ footer p {
 }
 
 .gallery .photo h1 {
-  bottom: 1vw;
   color: #fff;
   font-family: "Lato", sans-serif;
-  font-size: 2vmax;
   font-weight: 700;
+  bottom: 1vw;
+  font-size: 2vmax;
   left: 30px;
   position: absolute;
   text-transform: uppercase;
@@ -169,8 +175,8 @@ footer p {
 .page-header h1 {
   color: #fff;
   font-family: "Lato", sans-serif;
-  font-size: 2.9vmax;
   font-weight: 700;
+  font-size: 2.9vmax;
   letter-spacing: 1px;
   margin: 100px 0 50px;
   text-align: center;
@@ -179,11 +185,13 @@ footer p {
 
 .page-header p {
   color: #fff;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1vmax;
+  font-weight: 300;
+  line-height: 29px;
+  width: auto;
   font-weight: 400;
   letter-spacing: 2px;
-  line-height: 29px;
   margin: 50px auto 200px;
   max-width: 800px;
   text-align: center;
@@ -200,6 +208,7 @@ footer p {
 
 .services-field {
   border: 2px solid #fff;
+  text-align: center;
   color: #fff;
 }
 
@@ -208,21 +217,21 @@ footer p {
   font-family: "Lato", sans-serif;
   font-size: 2vmax;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   width: 40%;
+  text-align: center;
 }
 
 .services-field p {
   color: #fff;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1vmax;
   font-weight: 300;
   line-height: 26px;
+  width: 59%;
   margin: 25px auto 50px;
   padding: 25px;
   text-align: center;
-  width: 50%;
 }
 
 .works {
@@ -231,6 +240,7 @@ footer p {
 
 .works-field {
   border: 2px solid #000;
+  text-align: center;
   text-align: center;
 }
 
@@ -241,8 +251,8 @@ footer p {
 .works-field h3 {
   color: #3c3c3c;
   font-family: "Lato", sans-serif;
-  font-size: 1.1vmax;
   font-weight: 700;
+  font-size: 1.1vmax;
   padding: 40px 0;
   text-transform: uppercase;
 }
@@ -265,7 +275,7 @@ footer p {
 .works-grid p {
   font-size: 1vmax;
   margin: 0 auto;
-  width: 50%;
+  width: 68%;
 }
 
 .works-grid p:last-child {
@@ -275,6 +285,12 @@ footer p {
 @media only screen and (max-width: 768px) {
   body p {
     text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  footer p {
+    text-align: center;
   }
 }
  
