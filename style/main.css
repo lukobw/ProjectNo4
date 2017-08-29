@@ -4,7 +4,7 @@
 }
 
 body {
-  font-size: 100%;
+  font-size: 16px;
 }
 
 .container {
@@ -21,18 +21,18 @@ body {
 }
 
 .about-field legend {
+  font-size: 2.125em;
   color: #3c3c3c;
   font-family: "Lato", sans-serif;
-  font-size: 2vmax;
   font-weight: 700;
   text-transform: uppercase;
   width: 40%;
 }
 
 .about-field p {
+  font-size: 1em;
   color: #3c3c3c;
   font-family: 'Lato', sans-serif;
-  font-size: 1vmax;
   font-weight: 300;
   line-height: 24px;
   width: 60%;
@@ -58,29 +58,25 @@ body {
   text-align: center;
 }
 
-.contact-field button {
+.contact-field .btn-contact {
+  font-size: 1em;
   background-color: #3c3c3c;
   border: 2px solid #3c3c3c;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   margin: 50px;
   max-width: 60%;
+  padding: 20px;
+  text-transform: uppercase;
   width: 395px;
   word-spacing: 5px;
 }
 
-.contact-field .p-button {
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: 1vmax;
-  font-weight: 400;
-  margin: 0;
-  padding: 20px;
-  text-transform: uppercase;
-}
-
 .contact-field legend {
+  font-size: 2.125em;
   color: #3c3c3c;
   font-family: "Lato", sans-serif;
-  font-size: 1.8vmax;
   font-weight: 700;
   text-transform: uppercase;
   width: 40%;
@@ -88,12 +84,13 @@ body {
 }
 
 .contact-field p {
+  font-size: 1em;
   color: #3c3c3c;
   font-family: 'Lato', sans-serif;
-  font-size: 1vmax;
   font-weight: 300;
   line-height: 24px;
   width: 60%;
+  line-height: 16px;
   margin: 20px auto;
   padding: 10px 0;
 }
@@ -104,14 +101,15 @@ footer {
 }
 
 footer p {
+  font-size: 0.875em;
   color: #3c3c3c;
   font-family: 'Lato', sans-serif;
-  font-size: 0.8vmax;
   font-weight: 300;
   line-height: 0;
   width: auto;
   display: inline-block;
   font-weight: 400;
+  line-height: 16px;
 }
 
 footer img {
@@ -129,11 +127,11 @@ footer img {
 }
 
 .gallery .photo h1 {
+  font-size: 2.125em;
   color: #fff;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   bottom: 1vw;
-  font-size: 2vmax;
   left: 30px;
   position: absolute;
   text-transform: uppercase;
@@ -173,10 +171,10 @@ footer img {
 }
 
 .page-header h1 {
+  font-size: 3.375em;
   color: #fff;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 2.9vmax;
   letter-spacing: 1px;
   margin: 100px 0 50px;
   text-align: center;
@@ -184,9 +182,9 @@ footer img {
 }
 
 .page-header p {
+  font-size: 1em;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: 1vmax;
   font-weight: 300;
   line-height: 29px;
   width: auto;
@@ -213,9 +211,9 @@ footer img {
 }
 
 .services-field legend {
+  font-size: 2.125em;
   color: #fff;
   font-family: "Lato", sans-serif;
-  font-size: 2vmax;
   font-weight: 700;
   text-transform: uppercase;
   width: 40%;
@@ -223,9 +221,9 @@ footer img {
 }
 
 .services-field p {
+  font-size: 1em;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: 1vmax;
   font-weight: 300;
   line-height: 26px;
   width: 59%;
@@ -249,18 +247,18 @@ footer img {
 }
 
 .works-field h3 {
+  font-size: 1.25em;
   color: #3c3c3c;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 1.1vmax;
   padding: 40px 0;
   text-transform: uppercase;
 }
 
 .works-field legend {
+  font-size: 2.125em;
   color: #3c3c3c;
   font-family: "Lato", sans-serif;
-  font-size: 2vmax;
   font-weight: 700;
   text-transform: uppercase;
   width: 40%;
@@ -273,7 +271,7 @@ footer img {
 }
 
 .works-grid p {
-  font-size: 1vmax;
+  font-size: 1em;
   margin: 0 auto;
   width: 68%;
 }
@@ -282,15 +280,42 @@ footer img {
   margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-  body p {
-    text-align: justify;
+@media only screen and (max-width: 425px) {
+  .about-us, .works, .contact, .services-field, .page-header {
+    margin: 50px 0;
   }
-}
-
-@media only screen and (max-width: 375px) {
+  .about-us p, .works p, .contact p, .services-field p, .page-header p {
+    word-spacing: 5px;
+    line-height: 24px;
+    margin: 30px auto;
+    padding: 0 30px;
+    text-align: justify;
+    width: 100%;
+  }
+  .about-us p:last-child, .works p:last-child, .contact p:last-child, .services-field p:last-child, .page-header p:last-child {
+    padding: 0 30px;
+    width: 100%;
+  }
+  .works-field h3 {
+    padding: 20px 0;
+  }
+  .works-field div {
+    margin-top: 50px;
+  }
+  .contact-field legend {
+    width: 50%;
+  }
   footer p {
-    text-align: center;
+    margin: 0 25px;
+  }
+  .gallery .photo h1 {
+    font-size: 1.5em;
+  }
+  .services {
+    padding: 50px 0;
+  }
+  .jumbo {
+    margin-top: 11vh;
   }
 }
  

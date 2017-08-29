@@ -15,10 +15,14 @@ $bold: 700
 
 $lato: 'Lato', sans-serif
 
-=legend-common($font-size, $color)
+$base-font: 16px
+
+=font-size($font-size)
+  font-size: ($font-size / $base-font) * 1em
+
+=legend-common($color)
   color: $color
   font-family: $lato
-  font-size: $font-size
   font-weight: 700
   text-transform: uppercase
   width: 40%
@@ -27,10 +31,9 @@ $lato: 'Lato', sans-serif
   border: 2px solid $color
   text-align: center
 
-=p-common($color, $font-size, $width, $line-height)
+=p-common($color, $width, $line-height)
   color: $color
   font-family: 'Lato', sans-serif
-  font-size: $font-size
   font-weight: $light
   line-height: $line-height
   width: $width
@@ -45,7 +48,7 @@ $lato: 'Lato', sans-serif
   box-sizing: border-box
 
 body
-  font-size: 100%
+  font-size: $base-font
 
 .container
   margin: 0 auto
@@ -57,10 +60,12 @@ body
   +field-border($black)
 
   legend
-    +legend-common(2vmax, $legend-color)
+    +font-size(34px)
+    +legend-common($legend-color)
 
   p
-    +p-common($p-color, 1vmax, 60%, 24px)
+    +font-size(16px)
+    +p-common($p-color, 60%, 24px)
     margin: 30px auto 50px
     padding: 10px 0
 
@@ -77,29 +82,29 @@ body
 .contact-field
   +field-border($black)
 
-  button
+  .btn-contact
+    +font-size(16px)
     background-color: $button-bgcolor
     border: 2px solid $button-border
+    color: $white
+    font-family: $lato
+    font-weight: $regular
     margin: 50px
     max-width: 60%
+    padding: 20px
+    text-transform: uppercase
     width: 395px
     word-spacing: 5px
 
-  .p-button
-    color: $white
-    font-family: $lato
-    font-size: 1vmax
-    font-weight: $regular
-    margin: 0
-    padding: 20px
-    text-transform: uppercase
-
   legend
-    +legend-common(1.8vmax, $legend-color)
+    +font-size(34px)
+    +legend-common($legend-color)
     word-spacing: 10px
 
   p
-    +p-common($p-color, 1vmax, 60%, 24px)
+    +font-size(16px)
+    +p-common($p-color, 60%, 24px)
+    line-height: 16px
     margin: 20px auto
     padding: 10px 0
 
@@ -108,9 +113,11 @@ footer
   text-align: center
 
   p
-    +p-common($p-color, .8vmax, auto, 0)
+    +font-size(14px)
+    +p-common($p-color, auto, 0)
     display: inline-block
     font-weight: $regular
+    line-height: 16px
 
   img
     margin-right: 30px
@@ -124,9 +131,9 @@ footer
     position: relative
 
     h1
+      +font-size(34px)
       +h-common($white)
       bottom: 1vw
-      font-size: 2vmax
       left: 30px
       position: absolute
       text-transform: uppercase
@@ -160,15 +167,16 @@ footer
   text-align: center
 
   h1
+    +font-size(54px)
     +h-common($white)
-    font-size: 2.9vmax
     letter-spacing: 1px
     margin: 100px 0 50px
     text-align: center
     text-transform: uppercase
 
   p
-    +p-common($white, 1vmax, auto, 29px)
+    +font-size(16px)
+    +p-common($white, auto, 29px)
     font-weight: $regular
     letter-spacing: 2px
     margin: 50px auto 200px
@@ -188,11 +196,13 @@ footer
   color: $white
 
   legend
-    +legend-common(2vmax, $white)
+    +font-size(34px)
+    +legend-common($white)
     text-align: center
 
   p
-    +p-common($white, 1vmax, 59%, 26px)
+    +font-size(16px)
+    +p-common($white, 59%, 26px)
     margin: 25px auto 50px
     padding: 25px
     text-align: center
@@ -208,13 +218,14 @@ footer
     margin-top: 100px
 
   h3
+    +font-size(20px)
     +h-common($h3-color)
-    font-size: 1.1vmax
     padding: 40px 0
     text-transform: uppercase
 
   legend
-    +legend-common(2vmax, $legend-color)
+    +font-size(34px)
+    +legend-common($legend-color)
     word-spacing: 10px
 
 .works-grid
@@ -222,20 +233,52 @@ footer
   text-align: center
 
   p
-    font-size: 1vmax
+    +font-size(16px)
     margin: 0 auto
     width: 68%
 
     &:last-child
       margin-bottom: 50px
 
-@media only screen and (max-width: 768px)
-  body
+@media only screen and (max-width: 425px)
+
+  .about-us, .works, .contact, .services-field, .page-header
+    margin: 50px 0
+
     p
+      word-spacing: 5px
+      line-height: 24px
+      margin: 30px auto
+      padding: 0 30px
       text-align: justify
+      width: 100%
 
+      &:last-child
+        padding: 0 30px
+        width: 100%
 
-@media only screen and (max-width: 375px)
-    footer
-      p
-        text-align: center
+  .works-field
+    h3
+      padding: 20px 0
+
+    div
+      margin-top: 50px
+
+  .contact-field
+    legend
+      width: 50%
+
+  footer
+    p
+      margin: 0 25px
+
+  .gallery
+    .photo
+      h1 
+        +font-size(24px)
+
+  .services
+    padding: 50px 0
+
+  .jumbo
+    margin-top: 11vh
