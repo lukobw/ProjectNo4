@@ -18,14 +18,21 @@ body {
 .about-field {
   border: 2px solid #000;
   text-align: center;
+  position: relative;
 }
 
-.about-field legend {
+.about-field .legend {
   font-size: 2.125em;
   color: #3c3c3c;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
   text-transform: uppercase;
+  top: -20px;
+  background-color: #fff;
   width: 40%;
 }
 
@@ -56,6 +63,7 @@ body {
 .contact-field {
   border: 2px solid #000;
   text-align: center;
+  position: relative;
 }
 
 .contact-field .btn-contact {
@@ -73,12 +81,18 @@ body {
   word-spacing: 5px;
 }
 
-.contact-field legend {
+.contact-field .legend {
   font-size: 2.125em;
   color: #3c3c3c;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
   text-transform: uppercase;
+  top: -20px;
+  background-color: #fff;
   width: 40%;
   word-spacing: 10px;
 }
@@ -91,7 +105,7 @@ body {
   line-height: 24px;
   width: 60%;
   line-height: 16px;
-  margin: 20px auto;
+  margin: 50px auto;
   padding: 10px 0;
 }
 
@@ -208,16 +222,22 @@ footer img {
   border: 2px solid #fff;
   text-align: center;
   color: #fff;
+  position: relative;
 }
 
-.services-field legend {
+.services-field .legend {
   font-size: 2.125em;
   color: #fff;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
   text-transform: uppercase;
-  width: 40%;
+  top: -20px;
   text-align: center;
+  top: -40px;
 }
 
 .services-field p {
@@ -239,6 +259,7 @@ footer img {
 .works-field {
   border: 2px solid #000;
   text-align: center;
+  position: relative;
   text-align: center;
 }
 
@@ -255,14 +276,20 @@ footer img {
   text-transform: uppercase;
 }
 
-.works-field legend {
+.works-field .legend {
   font-size: 2.125em;
   color: #3c3c3c;
   font-family: "Lato", sans-serif;
   font-weight: 700;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
   text-transform: uppercase;
-  width: 40%;
+  top: -20px;
   word-spacing: 10px;
+  background-color: #fff;
+  width: 40%;
 }
 
 .works-grid {
@@ -285,12 +312,12 @@ footer img {
     margin: 50px 0;
   }
   .about-us p, .works p, .contact p, .services-field p, .page-header p {
-    word-spacing: 5px;
     line-height: 24px;
-    margin: 30px auto;
+    margin: 65px auto;
     padding: 0 30px;
     text-align: justify;
     width: 100%;
+    word-spacing: 5px;
   }
   .about-us p:last-child, .works p:last-child, .contact p:last-child, .services-field p:last-child, .page-header p:last-child {
     padding: 0 30px;
@@ -302,8 +329,8 @@ footer img {
   .works-field div {
     margin-top: 50px;
   }
-  .contact-field legend {
-    width: 50%;
+  .works-field .pencil {
+    margin-top: 100px;
   }
   footer p {
     margin: 0 25px;
@@ -316,6 +343,10 @@ footer img {
   }
   .jumbo {
     margin-top: 11vh;
+  }
+  .contact-field .legend {
+    font-size: 1.8em;
+    width: 40%;
   }
 }
  

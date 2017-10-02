@@ -24,8 +24,12 @@ $base-font: 16px
   color: $color
   font-family: $lato
   font-weight: 700
+  left: 0
+  margin: auto
+  position: absolute
+  right: 0
   text-transform: uppercase
-  width: 40%
+  top: -20px
 
 =field-border($color)
   border: 2px solid $color
@@ -58,10 +62,13 @@ body
 
 .about-field
   +field-border($black)
+  position: relative
 
-  legend
+  .legend
     +font-size(34px)
     +legend-common($legend-color)
+    background-color: #fff
+    width: 40%
 
   p
     +font-size(16px)
@@ -81,6 +88,7 @@ body
 
 .contact-field
   +field-border($black)
+  position: relative
 
   .btn-contact
     +font-size(16px)
@@ -96,16 +104,19 @@ body
     width: 395px
     word-spacing: 5px
 
-  legend
+  .legend
     +font-size(34px)
     +legend-common($legend-color)
+    background-color: #fff
+    width: 40%
     word-spacing: 10px
+
 
   p
     +font-size(16px)
     +p-common($p-color, 60%, 24px)
     line-height: 16px
-    margin: 20px auto
+    margin: 50px auto
     padding: 10px 0
 
 footer
@@ -194,11 +205,13 @@ footer
 .services-field
   +field-border($white)
   color: $white
+  position: relative
 
-  legend
+  .legend
     +font-size(34px)
     +legend-common($white)
     text-align: center
+    top: -40px
 
   p
     +font-size(16px)
@@ -212,6 +225,7 @@ footer
 
 .works-field
   +field-border($black)
+  position: relative
   text-align: center
 
   div
@@ -223,10 +237,12 @@ footer
     padding: 40px 0
     text-transform: uppercase
 
-  legend
+  .legend
     +font-size(34px)
     +legend-common($legend-color)
     word-spacing: 10px
+    background-color: #fff
+    width: 40%
 
 .works-grid
   margin: 0 auto
@@ -246,12 +262,12 @@ footer
     margin: 50px 0
 
     p
-      word-spacing: 5px
       line-height: 24px
-      margin: 30px auto
+      margin: 65px auto
       padding: 0 30px
       text-align: justify
       width: 100%
+      word-spacing: 5px
 
       &:last-child
         padding: 0 30px
@@ -264,9 +280,8 @@ footer
     div
       margin-top: 50px
 
-  .contact-field
-    legend
-      width: 50%
+    .pencil
+      margin-top: 100px
 
   footer
     p
@@ -282,3 +297,9 @@ footer
 
   .jumbo
     margin-top: 11vh
+
+  .contact-field
+    .legend
+      font-size: 1.8em
+      width: 40%
+      
